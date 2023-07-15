@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Google Search Cursor",
+  "version": "1.0",
+  "description": "Automatically sets the cursor to the Google search input.",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
